@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+</head>
+<body style="overflow-x: hidden;">
+    <h1 style="text-align: center;">DISPLAY OF 10 STUDENTS IN SQI AND THEIR DATA</h1>
+    <div id="show"></div>
+    <script>
+       class sqiStudents{
+            constructor(name, school,level,id,department,phone){
+                this.name = name
+                this.id = id
+                this.school = school
+                this.level = level
+                this.department = department
+             }
+         }
+         let Precious = new sqiStudents("Precious","SQI","1st Level",3030, "Software Engineering",)
+         let Tola = new sqiStudents("Tola","SQI","1st Level",3400, "Software Engineering",)
+         let Tunde = new sqiStudents("Tunde","SQI","2nd Level",7800, "Software Engineering",)
+         let David = new sqiStudents("David","SQI","3rd Level",45600, "Software Engineering",)
+         let John = new sqiStudents("John","SQI","3rd Level",2040, "Software Engineering",)
+         let Stephen = new sqiStudents("Stephen","SQI","4st Level",2000, "Software Engineering",)
+         let Ezra = new sqiStudents("Ezra","SQI","4st Level",5050, "Software Engineering",)
+         let Temi = new sqiStudents("Temi","SQI","4st Level",6400, "Software Engineering",)
+         let Femi = new sqiStudents("Femi","SQI","5st Level",6500, "Software Engineering",)
+         let Taiwo = new sqiStudents("Taiwo","SQI","6st Level",7060, "Software Engineering",)
+         show.innerHTML += `  
+         <div class="row">
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">1</h1>
+    <li class="list-group-item"> Name : ${Precious.name}</li>
+    <li class="list-group-item"> School : ${Precious.school}</li>
+    <li class="list-group-item">Level : ${Precious.level}</li>
+    <li class="list-group-item">Id : ${Precious.id}</li>
+    <li class="list-group-item">Department : ${Precious.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">2</h1>
+    <li class="list-group-item"> Name : ${Tola.name}</li>
+    <li class="list-group-item"> School : ${Tola.school}</li>
+    <li class="list-group-item">Level : ${Tola.level}</li>
+    <li class="list-group-item">Id : ${Tola.id}</li>
+    <li class="list-group-item">Department : ${Tola.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">3</h1>
+    <li class="list-group-item"> Name : ${Tunde.name}</li>
+    <li class="list-group-item"> School : ${Tunde.school}</li>
+    <li class="list-group-item">Level : ${Tunde.level}</li>
+    <li class="list-group-item">Id : ${Tunde.id}</li>
+    <li class="list-group-item">Department : ${Tunde.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">4</h1>
+    <li class="list-group-item"> Name : ${David.name}</li>
+    <li class="list-group-item"> School : ${David.school}</li>
+    <li class="list-group-item">Level : ${David.level}</li>
+    <li class="list-group-item">Id : ${David.id}</li>
+    <li class="list-group-item">Department : ${David.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">5</h1>
+    <li class="list-group-item"> Name : ${John.name}</li>
+    <li class="list-group-item"> School : ${John.school}</li>
+    <li class="list-group-item">Level : ${John.level}</li>
+    <li class="list-group-item">Id : ${John.id}</li>
+    <li class="list-group-item">Department : ${John.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">6</h1>
+    <li class="list-group-item"> Name : ${Stephen.name}</li>
+    <li class="list-group-item"> School : ${Stephen.school}</li>
+    <li class="list-group-item">Level : ${Stephen.level}</li>
+    <li class="list-group-item">Id : ${Stephen.id}</li>
+    <li class="list-group-item">Department : ${Stephen.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">7</h1>
+    <li class="list-group-item"> Name : ${Ezra.name}</li>
+    <li class="list-group-item"> School : ${Ezra.school}</li>
+    <li class="list-group-item">Level : ${Ezra.level}</li>
+    <li class="list-group-item">Id : ${Ezra.id}</li>
+    <li class="list-group-item">Department : ${Ezra.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">8</h1>
+    <li class="list-group-item"> Name : ${Temi.name}</li>
+    <li class="list-group-item"> School : ${Temi.school}</li>
+    <li class="list-group-item">Level : ${Temi.level}</li>
+    <li class="list-group-item">Id : ${Temi.id}</li>
+    <li class="list-group-item">Department : ${Temi.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">9</h1>
+    <li class="list-group-item"> Name : ${Femi.name}</li>
+    <li class="list-group-item"> School : ${Femi.school}</li>
+    <li class="list-group-item">Level : ${Femi.level}</li>
+    <li class="list-group-item">Id : ${Femi.id}</li>
+    <li class="list-group-item">Department : ${Femi.department}</li>
+  </ul>
+</div>
+        <div class="card ms-5 mt-5" style="width: 16rem;">
+  <ul class="list-group list-group-flush">
+    <h1 style="text-align: Center;">10</h1>
+    <li class="list-group-item"> Name : ${Taiwo.name}</li>
+    <li class="list-group-item"> School : ${Taiwo.school}</li>
+    <li class="list-group-item">Level : ${Taiwo.level}</li>
+    <li class="list-group-item">Id : ${Taiwo.id}</li>
+    <li class="list-group-item">Department : ${Taiwo.department}</li>
+  </ul>
+</div>
+      
+`
+    </script>
+</body>
+</html>
